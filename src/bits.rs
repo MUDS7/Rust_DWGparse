@@ -56,6 +56,7 @@ pub fn bit_read_BB(dat:&mut Bit_Chain)->u8{
             result|=(byte&0x80)>>7;
         }
     }
+    bit_advance_position(dat,2);
     result
 }
 pub fn bit_read_3B(dat:&mut Bit_Chain)->u8{

@@ -6,7 +6,7 @@ use crate::bits::{bit_advance_position, bit_chain_alloc};
 use log::error;
 pub fn bitprepare(size:usize)->Bit_Chain{
     Bit_Chain{
-        chain: vec![0],
+        chain: vec![0,0,0,0,0,0,0,0],
         size: (size + 1) as u32,
         byte: 0,
         bit: 0,
